@@ -23,7 +23,7 @@ import retrofit2.Response;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private TextView tvUserName;
+    //private TextView tvUserName;
     private TextView tvPortfolioValue;
     private TextView tvPortfolioProfit;
     private TextView tvInvestedValue;
@@ -55,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private void initializeViews() {
 
-        tvUserName = findViewById(R.id.tvUserName);
+       // tvUserName = findViewById(R.id.tvUserName);
 
         tvPortfolioValue =
                 findViewById(R.id.tvPortfolioValue);
