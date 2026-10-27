@@ -2,11 +2,11 @@ package com.example.finvest;
 
 public class WatchlistModel {
 
-    private String symbol;
-    private String companyName;
-    private double price;
-    private double change;
-    private double changePercentage;
+    private final String symbol;
+    private final String companyName;
+    private final double price;
+    private final double change;
+    private final double changePercentage;
 
     public WatchlistModel(
             String symbol,

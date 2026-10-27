@@ -2,11 +2,11 @@ package com.example.finvest;
 
 public class DashboardModel {
 
-    private String userName;
-    private double portfolioValue;
-    private double investedValue;
-    private double profitLoss;
-    private double profitLossPercentage;
+    private final String userName;
+    private final double portfolioValue;
+    private final double investedValue;
+    private final double profitLoss;
+    private final double profitLossPercentage;
 
     public DashboardModel(
             String userName,

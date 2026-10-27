@@ -2,11 +2,11 @@ package com.example.finvest;
 
 public class MarketModel {
 
-    private String symbol;
-    private String name;
-    private double value;
-    private double change;
-    private double changePercentage;
+    private final String symbol;
+    private final String name;
+    private final double value;
+    private final double change;
+    private final double changePercentage;
 
     public MarketModel(
             String symbol,
