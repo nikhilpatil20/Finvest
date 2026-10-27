@@ -11,7 +11,6 @@ public class WatchlistModel {
             String symbol,
             String companyName,
             double price,
-            double change,
             double changePercentage
     ) {
         this.symbol = symbol;

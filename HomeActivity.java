@@ -244,7 +244,6 @@ public class HomeActivity extends AppCompatActivity {
                         "RELIANCE",
                         "Reliance Industries",
                         1420.50,
-                        16.80,
                         1.20
                 )
         );
@@ -254,7 +253,6 @@ public class HomeActivity extends AppCompatActivity {
                         "TCS",
                         "Tata Consultancy Services",
                         3450.00,
-                        27.50,
                         0.80
                 )
         );
@@ -264,7 +262,6 @@ public class HomeActivity extends AppCompatActivity {
                         "INFY",
                         "Infosys",
                         1680.00,
-                        -6.70,
                         -0.40
                 )
         );
@@ -274,7 +271,6 @@ public class HomeActivity extends AppCompatActivity {
                         "HDFC BANK",
                         "HDFC Bank",
                         1825.30,
-                        14.25,
                         0.79
                 )
         );
