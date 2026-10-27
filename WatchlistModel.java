@@ -5,7 +5,6 @@ public class WatchlistModel {
     private final String symbol;
     private final String companyName;
     private final double price;
-    private final double change;
     private final double changePercentage;
 
     public WatchlistModel(
@@ -18,7 +17,6 @@ public class WatchlistModel {
         this.symbol = symbol;
         this.companyName = companyName;
         this.price = price;
-        this.change = change;
         this.changePercentage = changePercentage;
     }
 
@@ -32,10 +30,6 @@ public class WatchlistModel {
 
     public double getPrice() {
         return price;
-    }
-
-    public double getChange() {
-        return change;
     }
 
     public double getChangePercentage() {

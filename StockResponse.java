@@ -19,24 +19,20 @@ public class StockResponse {
     @SerializedName("name")
     private String name;
 
-
-    public String getSymbol() {
-        return symbol;
+    public StockResponse(String symbol, double price, double change, double changePercent) {
+        this.symbol = symbol;
+        this.price = price;
+        this.change = change;
+        this.changePercent = changePercent;
     }
+
 
     public double getPrice() {
         return price;
-    }
-
-    public double getChange() {
-        return change;
     }
 
     public double getChangePercent() {
         return changePercent;
     }
 
-    public String getName() {
-        return name;
-    }
 }
