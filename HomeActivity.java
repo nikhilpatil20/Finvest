@@ -93,9 +93,9 @@ public class HomeActivity extends AppCompatActivity {
                         1.99
                 );
 
-        tvUserName.setText(
-                dashboard.getUserName() + " 👋"
-        );
+//        tvUserName.setText(
+//                dashboard.getUserName() + " 👋"
+//        );
 
         tvPortfolioValue.setText(
                 String.format(
