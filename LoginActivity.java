@@ -55,15 +55,11 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(v -> validateLogin());
 
-        btnGoogle.setOnClickListener(v -> {
-
-            Toast.makeText(
-                    this,
-                    "Google Sign-In will be added later",
-                    Toast.LENGTH_SHORT
-            ).show();
-
-        });
+        btnGoogle.setOnClickListener(v -> Toast.makeText(
+                this,
+                "Google Sign-In will be added later",
+                Toast.LENGTH_SHORT
+        ).show());
 
         tvForgotPassword.setOnClickListener(v -> {
 

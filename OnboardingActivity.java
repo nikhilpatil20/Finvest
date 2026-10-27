@@ -11,7 +11,6 @@ import androidx.viewpager2.widget.ViewPager2;
 public class OnboardingActivity extends AppCompatActivity {
 
     private ViewPager2 viewPager;
-    private TextView tvSkip;
     private Button btnNext;
 
     private OnboardingAdapter adapter;
@@ -23,7 +22,7 @@ public class OnboardingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_onboarding);
 
         viewPager = findViewById(R.id.viewPager);
-        tvSkip = findViewById(R.id.tvSkip);
+        TextView tvSkip = findViewById(R.id.tvSkip);
         btnNext = findViewById(R.id.btnNext);
 
         adapter = new OnboardingAdapter();

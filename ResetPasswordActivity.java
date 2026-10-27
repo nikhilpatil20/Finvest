@@ -10,6 +10,8 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+import java.util.Objects;
+
 public class ResetPasswordActivity extends AppCompatActivity {
 
     private TextInputLayout passwordLayout;
@@ -20,15 +22,13 @@ public class ResetPasswordActivity extends AppCompatActivity {
 
     private MaterialButton btnResetPassword;
 
-    private String userEmail;
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_reset_password);
 
-        userEmail = getIntent()
+        String userEmail = getIntent()
                 .getStringExtra("email");
 
         initializeViews();
@@ -61,12 +61,12 @@ public class ResetPasswordActivity extends AppCompatActivity {
         passwordLayout.setError(null);
         confirmPasswordLayout.setError(null);
 
-        String password = etPassword
-                .getText()
+        String password = Objects.requireNonNull(etPassword
+                        .getText())
                 .toString();
 
-        String confirmPassword = etConfirmPassword
-                .getText()
+        String confirmPassword = Objects.requireNonNull(etConfirmPassword
+                        .getText())
                 .toString();
 
         if (password.isEmpty()) {
